@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+
+/* Header */
+.header {
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+.header__logo {
+  margin: 0 0 0 4rem;
+}
+
+.header__nav {
+  margin: 0 4rem 0 0;
+}
+
+.nav__button {
+  margin: 0 0 0 1.5rem;
+  background-color: #45b0d2;
+  height: 4rem;
+  width: 10rem;
+  border: none;
+  border-radius: 1rem;
+  color: #ffffff;
+}
+
+/* Main */
+/* Random Section */
+.main {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.section__container {
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  background-color: #d9d9d9;
+  height: 80%;
+  max-width: 80rem;
+  width: 90%;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animal-information {
+  padding: 0 0 0 2rem;
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 90%;
+}
+
+.filter {
+  height: 15rem;
+  width: 100%;
+  padding: 1rem 0 2rem 0;
+  border-radius: 1rem;
+  background-color: #45b0d2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter__header {
+  margin: 1rem;
+  flex: 1;
+}
+
+.filter__options {
+  flex: 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+  height: 7rem;
+}
+
+.filter__key {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter__value {
+  background-color: #d9d9d9;
+  border-radius: 0.5rem;
+  border: none;
+  width: 10rem;
+  height: 3rem;
+}
+
+.animal-details {
+  background-color: #7ec1b1;
+  height: 15rem;
+  width: 100%;
+  padding: 1rem 0 2rem 0;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.animal-details__header {
+  margin: 0.5rem;
+}
+
+.animal-temperament__p {
+  width: 90%;
+  background-color: #d9d9d9;
+  border-radius: 0.5rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.img-card {
+  margin: 0 2rem;
+  padding: 1rem;
+  background-color: #7ec1b1;
+  flex: 6;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90%;
+  max-width: 42rem;
+}
+
+.imgPlayer {
+  max-height: 85%;
+  max-width: 42rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroller {
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+  margin: 0 0.5rem;
+}
+
+.imgPlayer__imgContainer {
+  width: 34rem;
+  height: 29rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.imgPlayer__span {
+  position: absolute;
+}
+
+.img {
+  z-index: 1;
+  border-radius: 0.5rem;
+  max-height: 90%;
+  max-width: 100%;
+}
+
+.actions {
+  height: 15%;
+  width: 30rem;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.action__button {
+  height: 3rem;
+  margin-left: 1rem;
+  min-width: 5rem;
+  border: grey solid 0.1rem;
+  border-radius: 0.5rem;
+}
+
+.action__button:hover {
+  border: rgb(77, 77, 77) solid 0.1rem;
+}
+
+.action__button:active {
+  background-color: #c9c9c9;
+}
+
+.action__like-button--liked {
+  background-color: rgb(0, 160, 0);
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.action__like-button--liked:active {
+  background-color: rgb(0, 128, 0);
+  color: #ffffff;
+}
+
+.action__dislike-button--disliked {
+  background-color: rgb(223, 78, 78);
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.action__dislike-button--disliked:active {
+  background-color: rgb(196, 80, 80);
+  color: #ffffff;
+}
+
+.preview-container {
+  position: relative;
+}
+
+.preview-container__img {
+  background-color: blueviolet;
+  width: 25rem;
+  height: 25rem;
+}
+
+.preview-container__delete-button {
+  height: 3rem;
+  width: 3rem;
+  background-color: rgb(182, 105, 105);
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  cursor: pointer;
+  color: #f1f1f1;
+}
+
+.upload__label {
+  text-align: center;
+}
+
+.upload__label:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.footer {
+  background-color: #52b9d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+/* bem block__element--modifier    use - as space between words*/
